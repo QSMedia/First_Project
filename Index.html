@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+    <!-- Latest customed Css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Latest jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+
+    <div class="container-fluid text-center">
+        <h2>Hello jQUery Get/Set</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+
+            <div id="My-Card-One" class="card text-white bg-info ">
+                <div class="card-body">
+                    <h3 class="card-title">I am Card One </h3>
+                    <p id="First-Paragraph" class="card-text">A card is a flexible and extensible content container. It
+                        includes options for headers and footers, a wide variety of content, contextual background
+                        colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our
+                        old panels, wells, and thumbnails. Similar functionality to those components is available as
+                        modifier classes for cards</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+
+            <div id="My-Card-Two" class="card text-white bg-info">
+                <div class="card-body">
+                    <h3 class="card-title">I am Card Two</h3>
+                    <p class="card-text">A card is a flexible and extensible content container. It includes options for
+                        headers and footers, a wide variety of content, contextual background colors, and powerful
+                        display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and
+                        thumbnails. Similar functionality to those components is available as modifier classes for
+                        cards</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+
+            <div id="My-Card-Three" class="card text-white bg-info">
+                <div class="card-body">
+                    <h3 class="card-title">I am Card Three</h3>
+                    <p class="card-text">A card is a flexible and extensible content container. It includes options for
+                        headers and footers, a wide variety of content, contextual background colors, and powerful
+                        display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and
+                        thumbnails. Similar functionality to those components is available as modifier classes for
+                        cards</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+
+    <button id="My-First-Button" type="button text-center" class="btn btn-primary">First Click</button>
+
+    <button id="My-Second-Button" type="button text-center" class="btn btn-primary">Second Click</button>
+    <button id="My-Third-Button" type="button text-center" class="btn btn-primary">Third Click</button>
+
+    
+
+
+    <br>
+    <br>
+    <form>
+        <div class="row">
+            <div class="col-sm-4" >
+                <label Class="ExampleEmail">First Name</label>
+                <input id = "First-Name" type="email" class="form-control" value="Qaiser">
+
+            </div>
+            <div class= "col-sm-4">
+                    <div class="col">
+                            <label Class="ExampleEmail">Middle Name</label>
+                            <input type="email" class="form-control" placeholder="MiddleName">
+                            </div>
+                    </div>
+            <div class= "col-sm-4">
+                <label Class="ExampleEmail">Last Name</label>
+                <input type="email" class="form-control" value="Sajjad">
+            </div>
+        </div>
+    </form>
+
+    <br>
+    <br>
+
+
+    <button id="My-Fourth-Button" type="button text-center" class="btn btn-info">Click Here</button>
+    <script>
+
+        $(document).ready(function () {
+            $("#My-First-Button").click(function () {
+                $("#My-Card-Three").slideToggle();
+
+            });
+
+        });
+
+
+        $(document).ready(function () {
+            $("#My-Second-Button").click(function () {
+                $("#My-Card-Two").fadeOut(4000);
+                $("#My-Card-Two").fadeIn(4000);
+
+            });
+
+        });
+
+
+        $(document).ready(function () {
+            $("#My-Third-Button").click(function () {
+
+                alert($("#First-Paragraph").text());
+
+
+            });
+
+        });
+
+        $(document).ready(function () {
+            $("#My-Fourth-Button").click(function () {
+
+                alert("Value:" + $("#First-Name").val());
+
+
+            });
+
+        });
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
